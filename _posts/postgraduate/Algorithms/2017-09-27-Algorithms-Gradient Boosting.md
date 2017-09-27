@@ -2,7 +2,7 @@
 layout: post
 title: "梯度提升方法-Gradient Boosting"
 date: 2017-09-27 18:00:00 +0800 
-categories: 研究生涯
+categories: 学习生涯
 tag: Algorithms
 ---
 * content
