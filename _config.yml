@@ -1,15 +1,15 @@
 # Site settings
-name: 小可嗒嗒的博客
-email: maoxiaoke@outlook.com
-author: M/J
-url: http://xiaokedada.com
-resume_site: http://xiaokedada.com/me/
-github: https://github.com/maoxiaoke/
+name: 爽朗清净
+email: yingsun0809@aliyun.com
+author: SunYing
+url: http://happyjane/github.io
+# resume_site: http://xiaokedada.com/me/
+github: https://github.com/happyjane/
 baseurl: ""  #根目录
-description: 假如生活欺骗了你，不要悲伤，不要哭泣。
-motto: 我们笑着说再见，却深知再见遥遥无期。
-#motto: 如果生活欺骗了你，不要悲伤，不要哭泣。
-banner: 我想带你去看绚丽的山峦，去看秀丽的溪谷，这份心情，人类是如何称呼的呢。
+description: 笑着跟昨天说Bye-Bye，坚定的跟明天说Hello,。
+motto: 不为别人，只为做一个连自己都羡慕的人。
+# motto: 。
+banner: 不要等夕阳西下的时候才对自己说，想当初，如果，要是。。。
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
 excerpt_separator:  '<!-- more -->' #文章摘要
