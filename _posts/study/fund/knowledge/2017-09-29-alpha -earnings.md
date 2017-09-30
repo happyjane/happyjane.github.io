@@ -12,13 +12,13 @@ tag: Algorithms
 这里收集alpha和beta收益。
 
 <!-- more -->
-##1.风险收益
- 在投资之前，我们无法知道会赚钱还是会赔钱。这种不确定的损失叫做**风险(risk)**。
+## 1.风险收益
+在投资之前，我们无法知道会赚钱还是会赔钱。这种不确定的损失叫做**风险(risk)**。
 -**无风险收益**：最安全的投资是购买国债(或者存银行)。我们基本把它们视为无风险投资，它们的回报率也就是无风险收益率(Risk Free Return)。
 -**额外收益**：投资就是为了获得比无风险收益率更高的回报。接下来我们考虑的收益率都是超出无风险回报率之上的那一部分，可以称为额外收益 (Excess Return)。
 --[知乎](https://www.zhihu.com/question/23543972)
 
-## 2 额外收益率
+## 2. 额外收益率
 基于CAPM模型，证券投资的额外收益率可以看做两部分之和。第一部分是和整个市场无关的，叫**阿尔法**；第二部分是整个市场的平均收益率乘以一个贝塔系数。贝塔可以称为这个投资组合的**系统风险**。
 市场收益是m,基金收益是f，做个线性回归：f=alpha+beta*m+e，这就是alpha的定义，一般指相对市场的超额收益。阿尔法体现的是管理人的能力，贝特反应的是股票市场的系统性风险。
 
@@ -34,14 +34,15 @@ tag: Algorithms
 + 以股票市场为例，我们就可以通过寻找能够获取alpha的驱动因子来构建组合，由于组合的涨跌我们是不知道的，我们能够确保的是组合与基准的收益差在不断扩大，那么持有组合，做空基准，对冲获取稳定的差额收益（alpha收益）,这就是传说中的市场中性策略(**股票多空头**，**股指多空头**)。
 ![box-model]({{ '/styles/images/study/defineOfAlpha.jpg' | prepend: site.baseurl }})
 
->推荐书籍《quantitive equity portfolio》《主动投资组合管理》《finding alphas》。
++ 推荐书籍《quantitive equity portfolio》《主动投资组合管理》《finding alphas》。
  
 ### 2.3 寻找阿尔法
 
 优矿已经提供了海量的基础因子，可见[优矿因子周报](https://uqer.io/community/share/57425e58228e5b86a71fd0c3)；同时实现了Worldquant的websim中可以玩的工具并且把封闭的websim变成了开放的平台, 可以详见[如何用Quartz Signal快速实现Worldquant 101 Alpha](https://uqer.io/community/share/56e7d803228e5b887de50afe)。
 例如 [文章](http://papers.ssrn.com/sol3/Papers.cfm?abstract_id=2701346) 中描述的alpha 53为例，其原始表达式为:
 > (−1*delta((((close−low)−(high−close))/(close−low)),9))
---[知乎](https://www.zhihu.com/question/23543972/answer/102596255)
+
++ 引自[知乎](https://www.zhihu.com/question/23543972/answer/102596255)
 
 在优矿中测试alpha有效性的方法：
 
