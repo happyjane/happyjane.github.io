@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "梯度提升方法-Gradient Boosting"
+title: "阿尔法和贝特收益"
 date: 2017-09-27 18:00:00 +0800 
-categories: 诗和远方
+categories: alpha,beta
 tag: Algorithms
 ---
 * content
