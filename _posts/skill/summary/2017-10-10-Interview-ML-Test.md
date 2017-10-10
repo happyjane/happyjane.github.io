@@ -31,8 +31,8 @@ tag: Machine Learning
 #### 6.	KNN和K-Means的区别有哪些
 <table>
 <tr>
-  <th width 50%,bgcolor = yellow>KNN</th>
-  <th width 50%,bgcolor = yellow>K-Means</th>
+  <td>KNN</td>
+  <td>K-Means</td>
 </tr>
 <tr>
   <td> use a long listing format  </td>
