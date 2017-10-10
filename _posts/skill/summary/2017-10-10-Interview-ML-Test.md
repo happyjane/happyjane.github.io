@@ -35,7 +35,6 @@ tag: Machine Learning
   <td>K-Means</td>
 </tr>
 <tr>
-  <td> use a long listing format  </td>
   <td>  1.KNN是分类算法 
 		2.监督学习 
 		3.喂给它的数据集是带label的数据，已经是完全正确的数据</td>
