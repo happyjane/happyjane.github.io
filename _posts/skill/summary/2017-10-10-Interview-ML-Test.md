@@ -8,6 +8,8 @@ tag: Machine Learning
 * content
 {:toc}
 
+  本文记录了本期社招的笔试题
+
 #### 1.	SVM经常使用的核函数有：
 >-- (1)线性核函数(2)多项式核(3)径向基核（RBF）(4)傅里叶核(5)样条核(6)Sigmoid核函数
 

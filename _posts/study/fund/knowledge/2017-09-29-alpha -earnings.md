@@ -2,8 +2,8 @@
 layout: post
 title: "阿尔法和贝特收益"
 date: 2017-09-27 18:00:00 +0800 
-categories: alpha,beta
-tag: Algorithms
+categories: 诗和远方
+tag: alpha,beta
 ---
 * content
 {:toc}

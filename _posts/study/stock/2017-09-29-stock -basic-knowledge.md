@@ -3,7 +3,7 @@ layout: post
 title: "股票市场基本知识"
 date: 2017-09-29 18:00:00 +0800 
 categories: 诗和远方
-tag: Algorithms
+tag: 金融基础
 ---
 * content
 {:toc}
