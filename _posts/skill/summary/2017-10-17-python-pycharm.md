@@ -1,6 +1,6 @@
 ---
 layout: original
-title: "Hi"
+title: "pycharm 通过SFTP远程编辑项目的配置"
 date: 2017-10-17 14:30:26 +0800 
 categories: 酱油人生
 tag: pycharm
