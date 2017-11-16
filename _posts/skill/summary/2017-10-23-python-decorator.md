@@ -42,7 +42,9 @@ def staticFoo():
 
 ### decorator的应用
 1. 建立日志跟踪记录日志及错误日志
+
 ``` python
+
 #coding=utf-8
 @author: sunying
 @file: exception_logger.py
@@ -66,9 +68,6 @@ def create_logger(log_path,lable):
     # add handler to logger object
     logger.addHandler(fh)
     return logger
-```
-错误捕捉
-``` python
 
 @author: sunying
 @file: exception_dector.py
@@ -98,9 +97,10 @@ def exception(logger):
             raise
         return wrapper
     return decorator
-
 ```
+
 测试案例(以上两标准模块放在uniontools文件夹内)
+
 ``` python
 
 #test.py
