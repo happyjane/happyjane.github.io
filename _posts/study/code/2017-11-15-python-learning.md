@@ -15,14 +15,17 @@ tag: python
 ### 1. 变量
 常量 : 大写加下划线
 > USER_CONSTANT
+
 对于不会发生改变的全局变量，使用大写加下划线。
 
 私有变量 : 小写和一个前导下划线
 > _private_value
+
 Python 中不存在私有变量一说，若是遇到需要保护的变量，使用小写和一个前导下划线。但这只是程序员之间的一个约定，用于警告说明这是一个私有变量，外部类不要去访问它。但实际上，外部类还是可以访问到这个变量。
 
 内置变量 : 小写，两个前导下划线和两个后置下划线
 > __class__
+
 两个前导下划线会导致变量在解释期间被更名。这是为了避免内置变量和其他变量产生冲突。用户定义的变量要严格避免这种风格。以免导致混乱。
 
 ### 2. 函数和方法
@@ -142,3 +145,33 @@ person_address = {'user_1':'10 road WD', 'user_2' : '20 street huafu'}
 ## 函数调用时带括号和不带括号的区别：
 1、不带括号时，调用的是这个函数本身 
 2、带括号（此时必须传入需要的参数），调用的是函数的return结果
+
+##类中的__dict__学习笔记
+dict: 类与对象的所有成员； 
+类输出的是全局的函数，变量等信息。 
+对象输出的只是对象拥有的普通变量而已
+# http://python.jobbole.com/83747/
+``` python
+class Province:
+    country = 'China'
+
+    def __init__(self, name, count):
+        self.name = name
+        self.count = count
+
+    def func(self, *args, **kwargs):
+        print 'func'
+
+print Province.__dict__
+obj1 = Province('HeBei', 10000)
+print obj1.__dict__
+obj2 = Province('HeNan', 3888)
+print obj2.__dict__
+```
+结果：
+> {'country': 'China', '__module__': '__main__', 'func': <function func at 0x1074191b8>, '__init__': <function __init__ at 0x1074190c8>, '__doc__': None}
+> {'count': 10000, 'name': 'HeBei'}
+> {'count': 3888, 'name': 'HeNan'}
+
+## python 模块
+在一个文件夹下建立的模块在另一个文件夹下的文件引入，在源文件夹下要建立__init__.py的构造文件初始化该文件夹中的模块
