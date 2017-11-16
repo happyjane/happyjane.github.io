@@ -70,7 +70,7 @@ def create_logger(log_path,lable):
     logger.addHandler(fh)
     return logger
 ```
-```python
+``` python
 
 @author: sunying
 @file: exception_dector.py
