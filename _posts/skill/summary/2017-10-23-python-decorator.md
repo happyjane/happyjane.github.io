@@ -44,20 +44,16 @@ tag: python decorator
 
 ## decorator的应用
 1. 建立日志跟踪记录日志及错误日志
-```python
-#coding=utf-8
 
-"""
+``` python
+#coding=utf-8
 @author: sunying
 @file: exception_logger.py
 @time: 2017/11/16 15:43
 @description: 
     Creates a logging object and returns it
 @param logger: The logging path to store the log info
-
-""" 
 import logging
- 
 def create_logger(log_path,lable):
 
     logger = logging.getLogger(lable)
@@ -75,9 +71,7 @@ def create_logger(log_path,lable):
     return logger
 ```
 ```python
-#coding=utf-8
 
-"""
 @author: sunying
 @file: exception_dector.py
 @time: 2017/11/16 18:43
@@ -85,8 +79,7 @@ def create_logger(log_path,lable):
     A decorator that wraps the passed in function and logs 
     exceptions should one occur
 @param logger: The logging object
-    
-"""
+ 
 import functools
  
 def exception(logger):
@@ -109,7 +102,8 @@ def exception(logger):
         return wrapper
     return decorator
 ```
-``` python
+``` pythons
+
 #test.py
 from  uniontools import exception_decor 
 from  uniontools import exception_logger
