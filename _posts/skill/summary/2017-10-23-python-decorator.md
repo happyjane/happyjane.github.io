@@ -67,6 +67,7 @@ def create_logger(log_path,lable):
     logger.addHandler(fh)
     return logger
 ```
+错误捕捉
 ``` python
 
 @author: sunying
@@ -78,7 +79,6 @@ def create_logger(log_path,lable):
 @param logger: The logging object
  
 import functools
- 
 def exception(logger):
     def decorator(func):
  
@@ -98,7 +98,9 @@ def exception(logger):
             raise
         return wrapper
     return decorator
+
 ```
+测试案例(以上两标准模块放在uniontools文件夹内)
 ``` python
 
 #test.py
@@ -116,3 +118,5 @@ if __name__ == '__main__':
     zero_divide(1,2,3)
 
 ```
+
+> first edit 2017-11-16
