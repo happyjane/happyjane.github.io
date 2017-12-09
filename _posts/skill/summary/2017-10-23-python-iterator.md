@@ -19,7 +19,9 @@ tag: python 迭代器 & 生成器
 > 可以迭代不是序列但表现出序列行为的对象。
 
 ### 迭代器怎么用？
-''' python 
+
+``` python
+
 #!/usr/bin/env python
 #coding=utf-8
 #斐波那契数列
@@ -54,7 +56,7 @@ class Reverse:
             raise StopIteration
         self.index = self.index -1
         return self.data[self.index]
-'''
+```
 ### 迭代器转序列
 > 可以用list将迭代器显式的转化为列表。
 
